@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import Lottie
+import AppKit
 
 class TaskRunnerViewController: NSViewController, TaskPingReceiver, DataChanged, NSComboBoxDataSource {
     
@@ -21,6 +23,7 @@ class TaskRunnerViewController: NSViewController, TaskPingReceiver, DataChanged,
     @IBOutlet var taskProjectLabel: NSTextField!
     @IBOutlet var taskTaskLabel: NSTextField!
     @IBOutlet weak var taskComboBox: NSComboBox!
+    @IBOutlet weak var animation: AnimationView!
     
     // MARK: - Vars and Lets
     
@@ -59,6 +62,12 @@ class TaskRunnerViewController: NSViewController, TaskPingReceiver, DataChanged,
         reloadData()
         
         setCurrentTaskLabels()
+        
+        let a = Animation.named("play-pause-button")
+        self.animation.animation = a
+        animation.loopMode = .loop
+        animation.play()
+        
     }
     
     fileprivate func reloadData() {

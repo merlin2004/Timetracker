@@ -1027,6 +1027,10 @@ Gw
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </comboBoxCell>
                             </comboBox>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVY-09-PgB" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="cDI-IM-AIN" firstAttribute="top" secondItem="zvL-vG-v0H" secondAttribute="bottom" constant="8" id="0F2-w0-hee"/>
@@ -1072,6 +1076,7 @@ Gw
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animation" destination="sVY-09-PgB" id="6A2-uz-6La"/>
                         <outlet property="clientPopup" destination="Du1-ME-OEE" id="QMR-Yb-F9o"/>
                         <outlet property="hodPopup" destination="4IZ-Vr-fFi" id="DEY-pP-666"/>
                         <outlet property="projectPopup" destination="ssl-DN-0pw" id="nHA-1z-xm1"/>

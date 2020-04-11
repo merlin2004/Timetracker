@@ -14,6 +14,7 @@
 		E6281D2824421A4900CD467C /* PreferenceMiscViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6281D2724421A4900CD467C /* PreferenceMiscViewController.swift */; };
 		E6281D2B24421C1D00CD467C /* PreferenceMiscView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6281D2A24421C1D00CD467C /* PreferenceMiscView.xib */; };
 		E6281D2D24422BD200CD467C /* DockIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6281D2C24422BD200CD467C /* DockIconManager.swift */; };
+		E6281D2F244265A700CD467C /* play-pause-button.json in Resources */ = {isa = PBXBuildFile; fileRef = E6281D2E244265A700CD467C /* play-pause-button.json */; };
 		E65ED058223DAF23004C22C9 /* PreferenceBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65ED057223DAF23004C22C9 /* PreferenceBuilderViewController.swift */; };
 		E65EF088224E85F50023A7B5 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65EF087224E85F50023A7B5 /* LogManager.swift */; };
 		E662723B1CD8E84300B50E38 /* TabSeparatedValuesExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662723A1CD8E84300B50E38 /* TabSeparatedValuesExporter.swift */; };
@@ -72,6 +73,7 @@
 		E6281D2724421A4900CD467C /* PreferenceMiscViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceMiscViewController.swift; sourceTree = "<group>"; };
 		E6281D2A24421C1D00CD467C /* PreferenceMiscView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferenceMiscView.xib; sourceTree = "<group>"; };
 		E6281D2C24422BD200CD467C /* DockIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockIconManager.swift; sourceTree = "<group>"; };
+		E6281D2E244265A700CD467C /* play-pause-button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "play-pause-button.json"; sourceTree = "<group>"; };
 		E65ED057223DAF23004C22C9 /* PreferenceBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceBuilderViewController.swift; sourceTree = "<group>"; };
 		E65EF087224E85F50023A7B5 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		E662723A1CD8E84300B50E38 /* TabSeparatedValuesExporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabSeparatedValuesExporter.swift; path = Exporters/TabSeparatedValuesExporter.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		E6910F3C1CCE5CFF003CBA90 /* Timetracker */ = {
 			isa = PBXGroup;
 			children = (
+				E6281D2E244265A700CD467C /* play-pause-button.json */,
 				E65EF086224E85CE0023A7B5 /* Logging */,
 				E6FE838E1CDB34B600794723 /* WindowControllers */,
 				E66272391CD8E82600B50E38 /* Exporters */,
@@ -385,6 +388,7 @@
 				E6D964CE223DB4AC00B1C534 /* PreferenceBuilderView.xib in Resources */,
 				E6910F451CCE5CFF003CBA90 /* Assets.xcassets in Resources */,
 				E6910F481CCE5CFF003CBA90 /* Main.storyboard in Resources */,
+				E6281D2F244265A700CD467C /* play-pause-button.json in Resources */,
 				E6F788D522579BA000AE3DF3 /* PreferenceLogView.xib in Resources */,
 				E6281D2B24421C1D00CD467C /* PreferenceMiscView.xib in Resources */,
 			);
@@ -449,19 +453,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Timetracker/Pods-Timetracker-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Preferences/Preferences.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLog/SwiftLog.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Preferences.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
